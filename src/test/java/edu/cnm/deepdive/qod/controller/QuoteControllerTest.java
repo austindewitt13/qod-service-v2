@@ -68,6 +68,7 @@ class QuoteControllerTest extends BaseControllerTest {
         .andExpect(jsonPath("$", hasSize(0)));
   }
 
+
   @Test
   @DirtiesContext(methodMode = MethodMode.AFTER_METHOD)
   void getQuotes() throws Exception {
